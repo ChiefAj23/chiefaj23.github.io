@@ -39,8 +39,10 @@ jobs:
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add Gemfile.lock
-        git commit -m "Auto-update Gemfile.lock" || echo "No changes to commit"
+        echo ".bundle/" >> .gitignore
+        echo "vendor/" >> .gitignore
+        git add Gemfile.lock .gitignore
+        git commit -m "Auto-update Gemfile.lock and gitignore" || echo "No changes to commit"
         if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
           echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
           echo "NO_PUSH=--no-push" >> $GITHUB_OUTPUT
