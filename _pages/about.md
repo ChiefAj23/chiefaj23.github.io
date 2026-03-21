@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 <p align="justify">
-I am an AI Researcher focused on adversarial robustness, trustworthy AI, and perception security for autonomous systems. I recently earned my Master of Science in Computer Engineering with a concentration in AI from <a href = "https://www.tntech.edu/"> Tennessee Technological University, where I was advised by <a href ="https://sites.tntech.edu/shasan/"> Dr. Syed Rafay Hasan.
+I am an AI Researcher focused on adversarial robustness, trustworthy AI, and perception security for autonomous systems. I recently earned my Master of Science in Computer Engineering with a concentration in AI from <a href = "https://www.tntech.edu/"> Tennessee Technological University</a>, where I was advised by <a href ="https://sites.tntech.edu/shasan/"> Dr. Syed Rafay Hasan</a>.
 
 My work spans adversarial machine learning, LiDAR and camera-based perception, edge AI deployment, and real-time defense mechanisms for safety-critical environments. Recently, I have investigated adversarial machine learning vulnerabilities in Ouster LIDAR and camera sensor fusion, engineering novel defenses optimized for edge devices like Nvidia Jetson.
 
