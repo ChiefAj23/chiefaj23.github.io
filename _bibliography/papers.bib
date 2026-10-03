@@ -3,6 +3,20 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{mahdi2026cafe,
+  title={CAFE: Compressed Architecture for Edge-Deployed Facial Expression Recognition in Ambient Invisible Intelligence},
+  author={Mahdi, Mohammad Mahruf and Solanki, Abhijeet and Hasan, S. R. and Guo, T. and Rizvi, S. A. A.},
+  booktitle={Proceedings of the Eleventh ACM/IEEE Symposium on Edge Computing (SEC)},
+  month={Oct},
+  year={2026},
+  organization={ACM/IEEE},
+  abbr={SEC},
+  abstract={Ambient Invisible Intelligence (AII) requires continuous facial expression recognition (FER) on edge hardware, yet FER pipelines are almost universally evaluated on idealized, pre-cropped faces, ignoring both in-the-wild face detection and the memory and latency budgets of edge devices. We propose CAFE, a compressed, end-to-end YOLOv12n pipeline coupling face detection and emotion classification for near real-time edge deployment. Because YOLOv12n's attention-augmented modules defeat standard structured pruning, we introduce a topological model surgery that enables pruning without corrupting dependency graphs, validated directly by metadata-consumption and output-equivalence testing. We further introduce EDUS, a composite deployability score, and evaluate 88 pipeline configurations across FP32, FP16, and INT8 formats on a Jetson Orin Nano and a desktop GPU. Under a 15 W envelope, the compressed pipeline reduces end-to-end latency from 228.4 ms to 68.6 ms (3.3x, ~15 FPS) at a 7.3-point accuracy cost, while the detector retains 91.3% of baseline mAP50-95 on the heldout WIDER FACE split and the classifier retains 96.7% of baseline top-1 accuracy on FER2013. A controlled attribution study shows that TensorRT compilation with FP16 execution delivers essentially all of the latency gain and halves the serialized footprint, structured pruning removes a further tenth of the parameters and FLOPs, and the surgery delivers the feasibility of pruning this architecture at all. The same compressed artifacts yield consistent gains across both hardware classes.},
+  code={https://github.com/ChiefAj23/CAFE-SEC-2026},
+  bibtex_show={true},
+  selected={true}
+}
+
 @article{solanki2025survey,
   title={Survey of Navigational Perception Sensors' Security in Autonomous Vehicles},
   author={Solanki, Abhijeet and Al Amiri, W. and Mahmoud, M. and Swieder, B. and Hasan, S. R. and Guo, T. N.},
